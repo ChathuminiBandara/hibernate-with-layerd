@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="443.0" style="-fx-background-color: #5C4F82FF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.StudentController">
+   <children>
+      <Pane layoutX="115.0" layoutY="147.0" opacity="0.25" prefHeight="50.0" prefWidth="227.0" style="-fx-background-color: WHITE; -fx-background-radius: 20;" />
+      <Pane layoutX="120.0" layoutY="219.0" opacity="0.25" prefHeight="50.0" prefWidth="227.0" style="-fx-background-color: WHITE; -fx-background-radius: 20;" />
+      <Pane layoutX="115.0" layoutY="81.0" opacity="0.25" prefHeight="50.0" prefWidth="227.0" style="-fx-background-color: WHITE; -fx-background-radius: 20;">
+         <children>
+            <TextField fx:id="txtId" layoutX="12.0" layoutY="5.0" prefHeight="41.0" prefWidth="204.0" promptText="ID Here" style="-fx-background-color: transperant;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Button layoutX="279.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="51.0" style="-fx-background-color: #3CC6B7FF;" text="save" textFill="WHITE" />
+      <TextField fx:id="txtAddress" layoutX="126.0" layoutY="226.0" prefHeight="41.0" prefWidth="204.0" promptText="Address Here" style="-fx-background-color: transperant;" />
+      <TextField fx:id="txtname" layoutX="124.0" layoutY="152.0" prefHeight="41.0" prefWidth="204.0" promptText="Name Here" style="-fx-background-color: transperant;" />
+      <Label layoutX="54.0" layoutY="93.0" text="ID" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="163.0" text="NAME" textFill="WHITE" />
+      <Label layoutX="37.0" layoutY="235.0" text="ADDRESS" textFill="WHITE" />
+      <Label layoutX="135.0" layoutY="25.0" text="Studenrt Form" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Button layoutX="184.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #3CC6B7FF;" text="Update" textFill="WHITE" />
+      <Button layoutX="73.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #3CC6B7FF;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>
